@@ -5,3 +5,5 @@ max-model-len: 8k
 reasoning-parser: deepseek_r1
 gpu-memory-utilization: 0.85
 compilation-config: '{"cudagraph_mode": "FULL_DECODE_ONLY"}'
+enable-auto-tool-choice: true
+tool-call-parser: hermes
