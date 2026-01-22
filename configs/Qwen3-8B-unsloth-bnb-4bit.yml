@@ -1,4 +1,7 @@
+# Qwen3-8B-unsloth-bnb-4bit running on RTX3060 12GB
 model: unsloth/Qwen3-8B-unsloth-bnb-4bit
 served-model-name: Qwen3-8B-unsloth-bnb-4bit
 max-model-len: 8k
 reasoning-parser: deepseek_r1
+gpu-memory-utilization: 0.85
+compilation-config: '{"cudagraph_mode": "FULL_DECODE_ONLY"}'
