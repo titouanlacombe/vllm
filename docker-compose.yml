@@ -10,7 +10,7 @@ services:
     volumes:
       - ./data:/root/.cache/huggingface
       - ./configs/$CONFIG.yml:/config.yml
-    command: vllm serve --config=/config.yml
+    command: --config=/config.yml
     deploy:
       resources:
         reservations:
