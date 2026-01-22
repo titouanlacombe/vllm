@@ -1,0 +1,4 @@
+model: unsloth/Qwen3-8B-unsloth-bnb-4bit
+served-model-name: Qwen3-8B-unsloth-bnb-4bit
+max-model-len: 8k
+reasoning-parser: deepseek_r1
