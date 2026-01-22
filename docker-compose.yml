@@ -1,0 +1,20 @@
+name: vllm
+
+services:
+  app:
+    image: vllm/vllm-openai:latest-cu130
+    restart: unless-stopped
+    ipc: host  # Required for efficient memory sharing in multi-process inference
+    ports:
+      - $APP_PORT:8000
+    volumes:
+      - ./data:/root/.cache/huggingface
+      - ./configs/$CONFIG.yml:/config.yml
+    command: vllm serve --config=/config.yml
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
