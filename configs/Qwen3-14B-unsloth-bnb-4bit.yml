@@ -1,5 +1,4 @@
 model: unsloth/Qwen3-14B-unsloth-bnb-4bit
 served-model-name: Qwen3-14B-unsloth-bnb-4bit
 max-model-len: 8k
-enable-reasoning: true
 reasoning-parser: deepseek_r1
