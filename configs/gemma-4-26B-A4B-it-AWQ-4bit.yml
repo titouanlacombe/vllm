@@ -1,0 +1,3 @@
+model: cyankiwi/gemma-4-26B-A4B-it-AWQ-4bit
+max-model-len: 16k
+cpu-offload-gb: 8
