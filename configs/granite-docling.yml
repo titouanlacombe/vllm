@@ -2,3 +2,4 @@ model: ibm-granite/granite-docling-258M
 # max-model-len: 8k
 limit_mm_per_prompt:
   image: 1
+gpu-memory-utilization: 0.85
